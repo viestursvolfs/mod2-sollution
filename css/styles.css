@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+h1 {
+  font-size: 175%;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/********** main content **********/
+
+
+.row {
+  width: 100%;
+}
+
+/*** column boxes ***/
+.block {
+  background-color: gray;
+   border: 1px solid black;
+   margin: 15px;
+}
+ 
+/*the small boxes on top-right*/ 
+span {
+  float:right;
+  border: 1px solid black;
+  width: 33%;
+  height: 35px;
+  margin-top: 0px;
+  color: black;
+  font-size: 125%;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+#box1 {
+  background-color: #EF94E7;
+}
+
+#box2 {
+  background-color: red;
+}
+
+#box3 {
+  background-color: #EFE186;
+}
+
+/**** text ****/
+p {
+  margin-top: 40px;
+  padding: 15px;
+}
+
+
+/**** size for desktop ****/
+@media (min-width: 992px) {
+  .col-lg{
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/**** size for tablet ****/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md {
+    float: left;
+    width: 50%;
+  }
+  #block3 {
+width: 100%;
+  }
+}
+}
+
+/**** size for mobile ****/
+@media (max-width: 767px) {
+  .col-xs {
+    float: left;
+    width: 100%;
+  }
+  
